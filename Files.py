@@ -2,19 +2,19 @@
 import os
 import sys
 
-n = len(sys.argv)
-if n != 2:
-    exit ()
-
-path = sys.argv[1]
-def checkfiles (path) :
-    files_list = os.listdir(path)
-    for file in files_list :
-        if os.path.isfile(file) and file.endswith('.java') :
+def checkfiles(prefixpath):
+    for file in os.listdir(path):
+        if os.path.isfile(file) and file.endswith('.java'):
             print(file)
-            # createhtml (file)
-        elif os.path.isdir(file) :
+        elif os.path.isdir(file):
             path = file
             checkfiles(path)
 
-checkfiles(path)
+
+if __name__ == '__main__':
+    if len(sys.argv) != 2:
+        print("Must give a directory from where to serve the files")
+        exit(1)
+
+    path = sys.argv[1]
+    checkfiles(path)
