@@ -2,19 +2,19 @@
 import os
 import sys
 
-
-def createhtml (base_java_file) :
-
-
-
-
 n = len(sys.argv)
-if n != 1:
+if n != 2:
     exit ()
 
-path = sys.argv[0]
-files_list = os.listdir(path)
+path = sys.argv[1]
+def checkfiles (path) :
+    files_list = os.listdir(path)
+    for file in files_list :
+        if os.path.isfile(file) and file.endswith('.java') :
+            print(file)
+            # createhtml (file)
+        elif os.path.isdir(file) :
+            path = file
+            checkfiles(path)
 
-for file in files_list :
-    if os.path.isfile(file) and file.endswith('.java') :
-        createhtml (file)
+checkfiles(path)
