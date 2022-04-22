@@ -46,4 +46,3 @@ template = env.get_template("template.html")
 
 path = sys.argv[1]
 search_files(path,"java")
-
