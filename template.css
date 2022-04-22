@@ -49,15 +49,54 @@
 
 }
 
-.variable-type-text {
+.variable-text {
     margin: 5px;
+    letter-spacing: 2px;
 }
-.variable-name-text {
-    margin: 5px;
+
+.block-center {
+    display: flex;
+    justify-content: center;
 }
-.variable-symbol-text {
-    margin: 5px;
+
+.if-conditional-block-triangle {
+  width: 0px;
+  height: 0px;
+  border-style: inset;
+  border-width: 0 100px 170px 100px;
+  border-color: transparent transparent #90ee90 transparent;
+  float: left;
 }
-.variable-value-text {
-    margin: 5px;
+
+.if-conditional-block-triangle p {
+  text-align: center;
+  top: 60px;
+  left: -47px;
+  position: relative;
+  width: 93px;
+  height: 93px;
+  margin: 0px;
+}
+
+.while-loop-block-rhombus {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: #d3915f;
+    transform: rotate(45deg);
+}
+
+.while-loop-block-rhombus p {
+    transform: rotate(-45deg);
+    text-align: center;
+    line-height: 100px;
+    font-size: 12px;
+    font-weight: bolder;
+    position:absolute;
+    white-space: nowrap;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
