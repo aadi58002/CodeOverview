@@ -78,25 +78,43 @@
   margin: 0px;
 }
 
-.while-loop-block-rhombus {
-    width: 100px;
-    height: 100px;
-    margin: 20px;
-    background-color: #d3915f;
-    transform: rotate(45deg);
+.if-conditional-block-rhombus{
+  width: 0px;
+  height: 0px;
+  border-style: inset;
+  border-width: 0 100px 85px 100px;
+  border-color: transparent transparent #d3915f transparent;
+  float: left;
 }
 
-.while-loop-block-rhombus p {
-    transform: rotate(-45deg);
-    text-align: center;
-    line-height: 100px;
-    font-size: 12px;
-    font-weight: bolder;
-    position:absolute;
-    white-space: nowrap;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
+.if-conditional-block-rhombus p {
+  text-align: center;
+  top: 60px;
+  left: -47px;
+  position: relative;
+  width: 93px;
+  height: 93px;
+  margin: 0px;
+}
+
+.if-conditional-block-rhombus-inverted {
+  width: 0px;
+  height: 0px;
+  border-style: inset;
+  border-width: 0 100px 85px 100px;
+  border-color: transparent transparent #d3915f transparent;
+  transform: rotate(180deg);
+  float: left;
+}
+
+.if-conditional-block-rhombus-inverted p {
+  text-align: center;
+  top: 0px;
+  padding: 10px;
+  left: -47px;
+  position: relative;
+  transform: rotate(180deg);
+  width: 93px;
+  height: 93px;
+  margin: 0px;
 }
