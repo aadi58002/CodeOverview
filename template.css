@@ -21,7 +21,9 @@
 }
 
 .container-fluid {
-    overflow-x: scroll;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: scroll;
 }
 
 .container-fluid::-webkit-scrollbar {
@@ -117,4 +119,21 @@
   width: 93px;
   height: 93px;
   margin: 0px;
+}
+
+.side-navigator {
+  background-color: #232830;
+  min-height: 100vh;
+  height: 100%;
+  padding: 0px;
+}
+
+.side-bar-main-body {
+  background-color: #161925;
+  height: 50px;
+  width: 100%;
+  color: #9370db;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bolder;
 }
