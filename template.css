@@ -16,6 +16,7 @@
 .other-files-name{
     overflow: visible;
     white-space: nowrap;
+    cursor: pointer;
     margin: 2px;
 }
 
