@@ -7,33 +7,46 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="template.css">
+    <link rel="stylesheet" href="/template.css">
 </head>
 <body class="body-bg-dark">
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="test">
-                <a class="nav-link current-open-file" href="#">Current file name</a>
-                <div class="d-flex justify-content-between">
-                    <a class="nav-link other-files-name">file 1</a>
-                    <a class="nav-link other-files-name">file 3</a>
-                </div>
-            </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="container">
-        <div class="d-flex flex-wrap">
-            <div>
-                <div class="d-inline-flex one-variable-block">
-                    <p class="variable-type-text">int</p>
-                    <p class="variable-name-text">x</p>
-                    <p class="variable-symbol-text">=</p>
-                    <p class="variable-value-text">5</p>
+    <div class="class-block">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <div class="navbar-nav me-auto mb-2 mb-lg-0" id="test">
+                    <a class="nav-link current-open-file" href="#">Current file name</a>
+                    <div class="d-flex justify-content-between">
+                        {% for file in files_list %}
+                        <a href="{{ file }}">{{ file }}</a>
+                        {% endfor %}
+                    </div>
                 </div>
             </div>
+        </nav>
+        <div class="container">
+            <div class="d-flex flex-wrap">
+                <div>
+                    <div class="d-inline-flex one-variable-block">
+                        <p class="variable-text">int x = 5</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+        <div class="block-center">
+            <div class="while-loop-block-rhombus">
+                <p>loop Conditional</p>
+            </div>
+        </div>
+        <div class="block-center">
+            <div class="if-conditional-block-triangle">
+                <p>some information text goes here</p>
+            </div>
+        </div>
+        </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"crossorigin="anonymous"></script>
+    <script>
+        let rect = document.getElementById("").getBoundingClientRect();
+        rect.width; rect.height;
+    </script>
 </body>
 </html>
