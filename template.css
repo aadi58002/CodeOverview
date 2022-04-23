@@ -56,9 +56,22 @@
     letter-spacing: 2px;
 }
 
-.block-center {
+.block-center-rhombus-top {
     display: flex;
     justify-content: center;
+    margin-top: 5px;
+}
+
+.block-center-rhombus-bottom {
+  display: flex;
+  justify-content: center;
+}
+
+.block-center-triangle {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .if-conditional-block-triangle {
@@ -134,8 +147,17 @@
   width: 100%;
   color: #9370db;
   padding: 10px;
-  font-size: 20px;
   font-weight: bolder;
+  font-size: 25px;
+}
+
+.second-side-list{
+  color:aquamarine;
+  /* padding: 5px; */
+  font-weight: bolder;
+  font-size: 22px;
+  letter-spacing: 3px;
+  margin-left: 10px;
 }
 
 .class-border {
