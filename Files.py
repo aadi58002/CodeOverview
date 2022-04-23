@@ -15,8 +15,16 @@ def parser(file_name) :
 def search_files(directory, extension):
     extension = extension.lower()
     for dirpath, dirnames, files in os.walk(directory):
-        dirs_list = [os.path.join(dirpath, dirname).removeprefix("./") + "/" for dirname in dirnames if not dirpath.startswith("./.") and not dirname.startswith(".")]
-        files_list = [os.path.join(dirpath, name).removeprefix("./") for name in files if not dirpath.startswith("./.") and name.endswith(extension)]
+        dirs_list = [
+                os.path.join(dirpath, dirname).removeprefix("./") + "/"
+                for dirname in dirnames
+                if not dirpath.startswith("./.") and not dirname.startswith(".")
+        ]
+        files_list = [
+                os.path.join(dirpath, name).removeprefix("./")
+                for name in files
+                if not dirpath.startswith("./.") and name.endswith(extension)
+        ]
         for path in files_list:
             createhtml(path, dirs_list, files_list)
 
