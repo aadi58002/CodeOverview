@@ -51,7 +51,7 @@ def createhtml(file, dirs_list, files_list):
 
                 createhtml(os.path.join(dirpath, name))
             elif not extension:
-                print(os.path.join(dirpath, name))
+                print(path)
 
 if __name__ == '__main__':
     if len(sys.argv) != 2:
