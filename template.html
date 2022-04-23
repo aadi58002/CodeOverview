@@ -22,11 +22,23 @@
     </nav>
     {% if data is defined and data|length > 0 %}
     <div class="container-fluid row">
-        <div class="col-3 side-navigator">
-            <div class="col-3 side-bar-main-body">
-                {{ filename }}
-            </div>
-        </div>
+    <div class="col-3 side-navigator">
+       
+        <div class="col-3 side-bar-main-body">
+            Name of the current file
+             </div>
+       <div class="second-side-list">
+           Classes
+       </div>
+       <div class="third-side-list">
+           <ul>
+               <p> Class 1 </p>
+               <p> Class 2 </p>
+               <p> Class 3 </p>
+               <p> Class 4 </p>
+           </ul>
+       </div>
+    </div>
         <div class="class-block col-9">
             <div class="container">
                 <div class="d-flex flex-wrap">
@@ -38,12 +50,12 @@
                 </div>
             </div>
             <div class="condition_loops_cover_div">
-                <div class="block-center">
+                <div class="block-center-rhombus-top">
                     <div class="if-conditional-block-rhombus">
                         <p>loop</p>
                     </div>
                 </div>
-                <div class="block-center">
+                <div class="block-center-rhombus-bottom">
                     <div class="if-conditional-block-rhombus-inverted">
                         <p>Conditional</p>
                     </div>
