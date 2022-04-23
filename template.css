@@ -137,3 +137,32 @@
   font-size: 20px;
   font-weight: bolder;
 }
+
+.class-border {
+  border: 3px #42ff71 solid;
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.class-title {
+  margin: auto;
+  text-align: center;
+  font-size: 20px;
+  color: #d868a7;
+}
+
+.small-function-block {
+  width: 400px;
+  height: 100px;
+  padding: 27px;
+  border-radius: 5px;
+  background-color: #50bff4;
+  margin: 20px;
+}
+
+.function-heading {
+  color: white;
+  text-align: center;
+}
