@@ -11,53 +11,34 @@
 </head>
 <body class="body-bg-dark">
     <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid" id="navbar">
-            <div class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="container-fluid">
+            <div class="navbar-nav me-auto mb-2 mb-lg-0" id="test">
                 <div class="d-flex justify-content-between">
-                    {% for file in nav_dir_list %}
-                        <a class="nav-link other-files-name" href="/{{ file }}">{{ file }}</a>
-                    {% endfor %}
-                    {% for file in nav_file_list %}
-                        <a class="nav-link other-files-name" href="/{{ file }}.html">{{ file }}.java</a>
-                        <a class="nav-link other-files-name" href="/{{ file }}.html">{{ file }}.java</a>
-                        <a class="nav-link other-files-name" href="/{{ file }}.html">{{ file }}.java</a>
-                        <a class="nav-link other-files-name" href="/{{ file }}.html">{{ file }}.java</a>
-                        <a class="nav-link other-files-name" href="/{{ file }}.html">{{ file }}.java</a>
-                        <a class="nav-link other-files-name" href="/{{ file }}.html">{{ file }}.java</a>
-                        <a class="nav-link other-files-name" href="/{{ file }}.html">{{ file }}.java</a>
-                        <a class="nav-link other-files-name" href="/{{ file }}.html">{{ file }}.java</a>
-                        <a class="nav-link other-files-name" href="/{{ file }}.html">{{ file }}.java</a>
-                        <a class="nav-link other-files-name" href="/{{ file }}.html">{{ file }}.java</a>
-                        <a class="nav-link other-files-name" href="/{{ file }}.html">{{ file }}.java</a>
-                        <a class="nav-link other-files-name" href="/{{ file }}.html">{{ file }}.java</a>
-                        <a class="nav-link other-files-name" href="/{{ file }}.html">{{ file }}.java</a>
-                        <a class="nav-link other-files-name" href="/{{ file }}.html">{{ file }}.java</a>
-                        <a class="nav-link other-files-name" href="/{{ file }}.html">{{ file }}.java</a>
-                        <a class="nav-link other-files-name" href="/{{ file }}.html">{{ file }}.java</a>
-                        <a class="nav-link other-files-name" href="/{{ file }}.html">{{ file }}.java</a>
-                        <a class="nav-link other-files-name" href="/{{ file }}.html">{{ file }}.java</a>
-                        <a class="nav-link other-files-name" href="/{{ file }}.html">{{ file }}.java</a>
-                        <a class="nav-link other-files-name" href="/{{ file }}.html">{{ file }}.java</a>
-                        <a class="nav-link other-files-name" href="/{{ file }}.html">{{ file }}.java</a>
-                        <a class="nav-link other-files-name" href="/{{ file }}.html">{{ file }}.java</a>
-                        <a class="nav-link other-files-name" href="/{{ file }}.html">{{ file }}.java</a>
-                        <a class="nav-link other-files-name" href="/{{ file }}.html">{{ file }}.java</a>
-                        <a class="nav-link other-files-name" href="/{{ file }}.html">{{ file }}.java</a>
-                        <a class="nav-link other-files-name" href="/{{ file }}.html">{{ file }}.java</a>
-                        <a class="nav-link other-files-name" href="/{{ file }}.html">{{ file }}.java</a>
-                        <a class="nav-link other-files-name" href="/{{ file }}.html">{{ file }}.java</a>
-                    {% endfor %}
+                    <a class="nav-link other-files-name" href="#">file 1</a>
+                    <a class="nav-link other-files-name">file 3</a>
                 </div>
             </div>
         </div>
     </nav>
     {% if data is defined and data|length > 0 %}
     <div class="container-fluid row">
-        <div class="col-3 side-navigator">
-            <div class="col-3 side-bar-main-body">
-                {{ filename }}
-            </div>
-        </div>
+    <div class="col-3 side-navigator">
+       
+        <div class="col-3 side-bar-main-body">
+            Name of the current file
+             </div>
+       <div class="second-side-list">
+           Classes
+       </div>
+       <div class="third-side-list">
+           <ul>
+               <p> Class 1 </p>
+               <p> Class 2 </p>
+               <p> Class 3 </p>
+               <p> Class 4 </p>
+           </ul>
+       </div>
+    </div>
         <div class="class-block col-9">
             <div class="container">
                 <div class="d-flex flex-wrap">
@@ -69,12 +50,12 @@
                 </div>
             </div>
             <div class="condition_loops_cover_div">
-                <div class="block-center">
+                <div class="block-center-rhombus-top">
                     <div class="if-conditional-block-rhombus">
                         <p>loop</p>
                     </div>
                 </div>
-                <div class="block-center">
+                <div class="block-center-rhombus-bottom">
                     <div class="if-conditional-block-rhombus-inverted">
                         <p>Conditional</p>
                     </div>
