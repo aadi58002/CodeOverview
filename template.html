@@ -14,19 +14,23 @@
         <div class="container-fluid">
             <div class="navbar-nav me-auto mb-2 mb-lg-0" id="test">
                 <div class="d-flex justify-content-between">
-                    {% for file in files_list %}
-                        <a class="nav-link other-files-name" href="{{ file }}">{{ file }}</a>
+                    {% for file in nav_dir_list %}
+                        <a class="nav-link other-files-name" href="/{{ file }}">{{ file }}</a>
+                    {% endfor %}
+                    {% for file in nav_file_list %}
+                        <a class="nav-link other-files-name" href="/{{ file }}.html">{{ file }}.java</a>
                     {% endfor %}
                 </div>
             </div>
         </div>
     </nav>
+    {% if data is defined and data|length > 0 %}
     <div class="container-fluid row">
-    <div class="col-3 side-navigator">
-        <div class="col-3 side-bar-main-body">
-            Name of the current file
+        <div class="col-3 side-navigator">
+            <div class="col-3 side-bar-main-body">
+                {{ filename }}
+            </div>
         </div>
-    </div>
         <div class="class-block col-9">
             <div class="container">
                 <div class="d-flex flex-wrap">
@@ -56,6 +60,17 @@
             </div>
         </div>
     </div>
+    {% else %}
+        <div class="container">
+            <div class="d-flex flex-wrap">
+                <div>
+                    <div class="d-inline-flex one-variable-block">
+                        <p class="variable-text">Please open a file from the navigation bar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"crossorigin="anonymous"></script>
     <script>
         let rect = document.getElementById("").getBoundingClientRect();
